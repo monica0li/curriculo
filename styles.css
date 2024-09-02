@@ -1,0 +1,65 @@
+body{
+    /*margin zero para o menu ficar colado no topo da pagina*/
+    margin: 0;
+    background-color: rgb(245, 238, 229);
+}
+
+header{
+    background-color: #321b15;
+    padding: 10px;
+    /*arredondando as bordas do menu*/
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+    margin: 50px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li a:hover{
+    color: #c4583d;
+}
+
+.container{
+    width: 80%;
+    padding:50px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 23px;
+    line-height: 3;
+}
+
+/*adicionei uma estrelinha na frente das frases e links*/
+p:before, .portfolio::before {
+    content: "★ "
+}
+
+.portfolio{
+    font-size: 25px;
+    line-height: 3;
+    text-decoration: none;
+    color:#321b15
+}

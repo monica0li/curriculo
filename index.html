@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* alem da folha de estilos esterna, adicionei uma interna também para especifidades nesta página */
+        .container{
+            display:flex;
+        }
+        
+        #fotomonica{
+            border-radius: 100%;
+            float:left;
+            width: 300px;
+        }
+        
+        .container #texto{
+            margin-left: 150px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <!--coloquei cada item da div container em outra div, porque eu so queria que os itens principais tivessem display:flex-->
+        <div>
+            <img src="img/monicaft.jpg" alt="uma foto minha" id="fotomonica">
+        </div>
+
+        <div id="texto">
+            <h1>Sobre Mim</h1><hr>
+            <h2>Mônica Vieira de Oliveira</h2>
+            <p>Me chamo Mônica, tenho 19 anos e sou aspirante a desenvolvedora de software;</p>
+
+            <p>Entrei no mundo da tecnologia em 2020, quando iniciei o técnico em redes de computadores, e foi lá onde eu conheci a programação e logo de cara me encontrei;</p>
+                
+            <p>Já atuei na área de desenvolvimento por um ano, depois suporte help desk, e atualmente trabalho com qualidade de software;</p>
+                
+            <p>Em meu tempo livre, gosto de fazer academia, fazer receitas e pintar as unhas.</p>    
+        </div>
+    </div>
+
+</body>
+</html>

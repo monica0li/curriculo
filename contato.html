@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* alem da folha de estilos esterna, adicionei uma interna também para especifidades nesta página */
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #contato{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        input, textarea{
+            width: 350px;
+            height: 20px;
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+        fieldset{
+            border-radius: 10px;
+            padding:35px;
+        }
+
+        label{
+            font-size:25px;
+        }
+
+        textarea{
+            height: 100px;
+        }
+
+        #redes{
+            display: flex;
+        }
+
+        #redes div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #redes img {
+            width: 80px;
+            margin: 20px
+        }
+
+        #redes a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #321b15;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Contato</h1><hr>
+        <div id="contato">
+            <h2>Quer falar comigo? Manda uma mensagem!</h2>
+            <form action="" method="post"> <!--sem action pois não tem backend aqui-->
+                <fieldset>
+                <label for="nome">Nome:</label><br><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br><br>
+                <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+                <input type="submit" value="Enviar" style="background-color: #321b15; color: beige; height: auto;">
+                </fieldset>
+        </div>
+
+        <h2>Me acompanhe nas redes sociais!</h2>
+        <div id="redes">
+        <!--as imagens dessa div estao dentro da tag <a> para se tornarem imagens com link-->
+            <div>
+                <a href="https://www.linkedin.com/in/m%C3%B4nica-vieira-88819520b/" target="_blank"><img src="img/linkedin.png" alt="logomarca do linkedin"></a>
+                <a href="https://www.linkedin.com/in/m%C3%B4nica-vieira-88819520b/" target="_blank">Monica <br>Oliveira</a>
+            </div>
+
+            <div>
+                <a href="https://github.com/monica0li" target="_blank"><img src="img/github.png" alt="logomarca do github"></a>
+                <a href="https://github.com/monica0li" target="_blank">monica0li</a>
+            </div>
+            
+            <div>
+                
+                <a href="https://www.instagram.com/monica0li/" target="_blank"><img src="img/instagram.png" alt="logomarca do instagram"></a>
+                <a href="https://www.instagram.com/monica0li/" target="_blank">monica0li</a>
+            </div>
+           
+        </div>
+
+
+    </div>
+</body>
+</html>
